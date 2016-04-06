@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Bluetooth Devices"
+        android:textSize="30sp"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -24,10 +25,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listView_devices"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/toggleButton_visible"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" />
+        android:layout_alignParentStart="true" />
 
     <Switch
         android:layout_width="wrap_content"
@@ -38,5 +38,14 @@
         android:layout_alignRight="@+id/listView_devices"
         android:layout_alignEnd="@+id/listView_devices"
         android:checked="false" />
+
+    <ToggleButton
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:text="Visible"
+        android:id="@+id/toggleButton_visible"
+        android:layout_below="@+id/switch_search"
+        android:layout_alignRight="@+id/listView_devices"
+        android:layout_alignEnd="@+id/listView_devices" />
 
 </RelativeLayout>
